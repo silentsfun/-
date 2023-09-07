@@ -23,9 +23,9 @@ Getting started with Bypass6 Games is super easy:
 
 You can easily deploy Bypass6 Games on different platforms:
 
-- **GitHub Pages**:[](https://img.shields.io/badge/Deploy%20to-GitHub%20Pages-blue?style=flat-square&logo=github)](https://github.com/silentsfun/-/deployments/activity_log?environment=github-pages)
-- **Replit**: [](https://img.shields.io/badge/Deploy%20to-Replit-9cf?style=flat-square&logo=replit)](https://replit.com/github/silentsfun/-)
-- **Vercel**: [](https://img.shields.io/badge/Deploy%20to-Vercel-lightgrey?style=flat-square&logo=vercel)](https://vercel.com/import/git?s=https://github.com/silentsfun/-)
+- **GitHub Pages**: [![Deploy to GitHub Pages](https://img.shields.io/badge/-GitHub%20Pages-blue?style=flat-square&logo=github)](https://github.com/silentsfun/-/deployments/activity_log?environment=github-pages)
+- **Replit**: [![Deploy to Replit](https://img.shields.io/badge/-Replit-9cf?style=flat-square&logo=replit)](https://replit.com/github/silentsfun/-)
+- **Vercel**: [![Deploy to Vercel](https://img.shields.io/badge/-Vercel-lightgrey?style=flat-square&logo=vercel)](https://vercel.com/import/git?s=https://github.com/silentsfun/-)
 
 Just click on the respective buttons above to deploy your Bypass6 Games on your preferred platform.
 

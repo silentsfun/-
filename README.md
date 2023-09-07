@@ -19,16 +19,22 @@ Getting started with Bypass6 Games is super easy:
 - **Wide Variety**: We offer a diverse selection of games, from action-packed adventures to brain-teasing puzzles.
 - **No Downloads**: There's no need to download or install anything. Just click and play!
 
+## Deployment
+
+You can easily deploy Bypass6 Games on different platforms:
+
+- **GitHub Pages**: [![Deploy to GitHub Pages](https://img.shields.io/badge/Deploy%20to-GitHub%20Pages-blue?style=flat-square&logo=github)](https://github.com/silentsfun/-/deployments/activity_log?environment=github-pages)
+- **Replit**: [![Deploy to Replit](https://img.shields.io/badge/Deploy%20to-Replit-9cf?style=flat-square&logo=replit)](https://replit.com/github/silentsfun/-)
+- **Vercel**: [![Deploy to Vercel](https://img.shields.io/badge/Deploy%20to-Vercel-lightgrey?style=flat-square&logo=vercel)](https://vercel.com/import/git?s=https://github.com/silentsfun/-)
+
+Just click on the respective buttons above to deploy your Bypass6 Games on your preferred platform.
+
 ## Contributing
 
 We welcome contributions from the gaming community. If you have a cool game to add or want to report any issues, feel free to get in touch with us.
 
-## Deployment
-
-You can easily deploy Bypass6 Games on platforms like GitHub Pages, Replit, and Vercel. Just click one of the "Deploy" buttons below to get started!
-
 ## Contact Us
 
-If you have any questions, suggestions, or just want to chat about games, you can reach out to us at [help@bypass6.org](mailto:help@bypass6.org).
+If you have any questions or need assistance, you can reach out to us at [help@bypass6.org](mailto:help@bypass6.org).
 
 Let's have a blast gaming together! 🎮

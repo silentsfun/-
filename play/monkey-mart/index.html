@@ -10,6 +10,10 @@
             padding: 0;
             background-color: #1a1a1a;
             font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
 
         .game-frame {
@@ -19,6 +23,8 @@
             flex-direction: column;
             align-items: center;
             text-align: center;
+            border: 2px solid #00cc00;
+            padding: 20px;
         }
 
         .game-title {
@@ -39,31 +45,36 @@
             margin-top: 10px;
         }
 
+        .game-iframe-container {
+            width: 500px;
+            height: 500px;
+            border: 5px solid #00cc00;
+            background-color: #1a1a1a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
         .game-iframe {
             width: 100%;
-            height: 500px;
+            height: 100%;
             border: none;
         }
 
-        .game-buttons {
-            margin-top: 20px;
+        .game-containers {
             display: flex;
-            align-items: center;
+            margin-top: 20px;
         }
 
-        .game-button {
-            background-color: #00cc00;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            margin: 0 10px;
-            cursor: pointer;
-            font-size: 16px;
-            border-radius: 5px;
-        }
-
-        .game-button:hover {
-            background-color: #009900;
+        .game-container {
+            flex: 1;
+            background-color: #1a1a1a;
+            color: #00cc00;
+            border: 2px solid #00cc00;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
         }
     </style>
 </head>
@@ -72,10 +83,18 @@
         <h1 class="game-title">Bloons Tower Defense 4</h1>
         <p class="game-author">by Ninja Kiwi</p>
         <p class="game-description">Defend against the bloons and save the day!</p>
-        <iframe class="game-iframe" src="/games/monkey-mart/index.html"></iframe>
-        <div class="game-buttons">
-            <button class="game-button">Play Now</button>
-            <button class="game-button">More Info</button>
+        <div class="game-iframe-container">
+            <iframe class="game-iframe" src="games/monkey-mart/index.html"></iframe>
+        </div>
+        <div class="game-containers">
+            <div class="game-container">
+                <!-- Add content for the left container here -->
+                Left Container
+            </div>
+            <div class="game-container">
+                <!-- Add content for the right container here -->
+                Right Container
+            </div>
         </div>
     </div>
 </body>

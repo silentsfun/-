@@ -2,151 +2,134 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    /* Add styles for the particle container */
+    #particles-js {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1; /* Place it behind other content */
+    }
+
+    /* Remove any margin or padding from the body */
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden; /* To prevent horizontal scrollbar */
+    }
+
+    /* Make the game menu and footer background transparent */
+    .game-menu, footer {
+      background-color: transparent;
+    }
+
+    /* Add some styles to your existing content */
+    .game-box {
+      width: 220px;
+      height: 150px;
+      border: 4px solid transparent;
+      border-radius: 15px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .game-box:hover {
+      transform: scale(1.05);
+      border: 4px solid lightgreen;
+    }
+
+    .game-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    footer {
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .footer-nav {
+      display: flex;
+      justify-content: center;
+    }
+
+    .footer-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-links li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    .footer-links li a {
+      text-decoration: none;
+      color: lightgreen;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .footer-links li a:hover {
+      color: white;
+    }
+  </style>
 </head>
 <body>
-<div id="particles-js"></div>
-<div class="game-menu">
-<div class="game-menu"> 
-  <div class="game-box">
-    <a href="games/monkey-mart"> <img src="games/monkey-mart/monkeymartlogo.png" alt="Game Preview"> </a>
-    <a href="games/monkey-mart"> <img src="games/monkey-mart/monkeymartlogo.png" alt="Game Preview"> </a>
-    <a href="games/monkey-mart"> <img src="games/monkey-mart/monkeymartlogo.png" alt="Game Preview"> </a>
-    <a href="games/monkey-mart"> <img src="games/monkey-mart/monkeymartlogo.png" alt="Game Preview"> </a>
-    <a href="games/monkey-mart"> <img src="games/monkey-mart/monkeymartlogo.png" alt="Game Preview"> </a>
-    <a href="games/monkey-mart"> <img src="games/monkey-mart/monkeymartlogo.png" alt="Game Preview"> </a>
-    <a href="games/monkey-mart"> <img src="games/monkey-mart/monkeymartlogo.png" alt="Game Preview"> </a>
-    <a href="games/monkey-mart"> <img src="games/monkey-mart/monkeymartlogo.png" alt="Game Preview"> </a>
-    <a href="games/monkey-mart"> <img src="games/monkey-mart/monkeymartlogo.png" alt="Game Preview"> </a>
-    <a href="games/monkey-mart"> <img src="games/monkey-mart/monkeymartlogo.png" alt="Game Preview"> </a>
-    <a href="games/monkey-mart"> <img src="games/monkey-mart/monkeymartlogo.png" alt="Game Preview"> </a>
-    <a href="games/monkey-mart"> <img src="games/monkey-mart/monkeymartlogo.png" alt="Game Preview"> </a>
-    <a href="games/monkey-mart"> <img src="games/monkey-mart/monkeymartlogo.png" alt="Game Preview"> </a>
-    <a href="games/monkey-mart"> <img src="games/monkey-mart/monkeymartlogo.png" alt="Game Preview"> </a>
-    <a href="games/monkey-mart"> <img src="games/monkey-mart/monkeymartlogo.png" alt="Game Preview"> </a>
-    <a href="games/monkey-mart"> <img src="games/monkey-mart/monkeymartlogo.png" alt="Game Preview"> </a>
-</div>
+  <!-- Particle container -->
+  <div id="particles-js"></div>
 
-<footer>
-  <nav class="footer-nav">
-    <ul class="footer-links">
-      <li><a href="/about">About</a></li>
-      <li><a href="/contact">Contact</a></li>
-      <li><a href="/privacy">Privacy Policy</a></li>
-      <li><a href="/privacy">Exploits</a></li>
-      <li><a href="/privacy">Donate</a></li>     
-      <li><a href="/privacy">Account</a></li>
-      <li><a href="/privacy">Proxy</a></li>
-    </ul>
-  </nav>
-</footer>
+  <!-- Rest of your website content -->
+  <div class="game-menu">
+    <!-- Game boxes and content here -->
+    <div class="game-box">
+      <a href="games/monkey-mart">
+        <img src="games/monkey-mart/monkeymartlogo.png" alt="Game Preview">
+      </a>
+    </div>
+    <!-- Add more game boxes as needed -->
+    <!-- ... -->
+  </div>
 
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<script>
-  particlesJS("particles-js", {
-    particles: {
-      number: {
-        value: 80, // Adjust the number of particles as needed
-        density: {
-          enable: true,
-          value_area: 800,
-        },
-      },
-      color: {
-        value: "#ffffff", // Adjust the color of particles
-      },
-      shape: {
-        type: "circle", // Change the shape to "circle", "edge", or "triangle" as desired
-        stroke: {
-          width: 0,
-          color: "#000000",
-        },
-        polygon: {
-          nb_sides: 5,
-        },
-      },
-      opacity: {
-        value: 0.5, // Adjust particle opacity
-        random: false,
-        anim: {
-          enable: false,
-          speed: 1,
-          opacity_min: 0.1,
-          sync: false,
-        },
-      },
-      size: {
-        value: 3, // Adjust particle size
-        random: true,
-        anim: {
-          enable: false,
-          speed: 40,
-          size_min: 0.1,
-          sync: false,
-        },
-      },
-      line_linked: {
-        enable: true,
-        distance: 150, // Adjust the distance between connected particles
-        color: "#ffffff", // Adjust the color of the lines between particles
-        opacity: 0.4,
-        width: 1,
-      },
-      move: {
-        enable: true,
-        speed: 6, // Adjust particle movement speed
-        direction: "none", // Change movement direction to "none", "top", "top-right", "right", etc.
-        random: false, // Set to true for random movement direction
-        straight: false, // Set to true for straight-line movement
-        out_mode: "out",
-        bounce: false,
-        attract: {
-          enable: false,
-          rotateX: 600,
-          rotateY: 1200,
-        },
-      },
-    },
-    interactivity: {
-      detect_on: "canvas",
-      events: {
-        onhover: {
-          enable: true,
-          mode: "repulse", // Adjust interaction mode to "grab", "bubble", or "repulse"
-        },
-        onclick: {
-          enable: true,
-          mode: "push", // Adjust interaction mode to "push" or "remove"
-        },
-        resize: true,
-      },
-      modes: {
-        grab: {
-          distance: 400,
-          line_linked: {
-            opacity: 1,
+  <footer>
+    <!-- Footer content here -->
+    <nav class="footer-nav">
+      <ul class="footer-links">
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/privacy">Privacy Policy</a></li>
+        <li><a href="/privacy">Exploits</a></li>
+        <li><a href="/privacy">Donate</a></li>     
+        <li><a href="/privacy">Account</a></li>
+        <li><a href="/privacy">Proxy</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <!-- JavaScript for particles.js -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: {
+          value: 80, // Adjust the number of particles as needed
+          density: {
+            enable: true,
+            value_area: 800,
           },
         },
-        bubble: {
-          distance: 400,
-          size: 40,
-          duration: 2,
-          opacity: 8,
-          speed: 3,
+        color: {
+          value: "#ffffff", // Adjust the color of particles
         },
-        repulse: {
-          distance: 200, // Adjust repulse distance
-          duration: 0.4,
-        },
-        push: {
-          particles_nb: 4, // Adjust the number of particles emitted on click
-        },
-        remove: {
-          particles_nb: 2, // Adjust the number of particles removed on click
-        },
+        // Other particle options...
       },
-    },
-    retina_detect: true,
-  });
-</script>
+      // Other particles.js options...
+    });
+  </script>
 </body>
 </html>

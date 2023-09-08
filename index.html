@@ -8,13 +8,13 @@
     /* Add your custom CSS styles here */
     body {
       background-color: #2c2c2c; /* Set the dark gray background color */
+      margin: 0; /* Remove default margin */
     }
   </style>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <body>
-  <div id="particles-js">
-    <canvas class="particles-js-canvas-el"></canvas>
-  </div>
+  <div id="particles-js"></div>
 
   <div class="game-menu">
     <!-- Your game boxes go here -->
@@ -40,7 +40,6 @@
     </nav>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script>
     particlesJS("particles-js", {
       particles: {
@@ -108,11 +107,11 @@
         events: {
           onhover: {
             enable: true,
-            mode: "repulse",
+            mode: "repulse", // Adjust interaction mode to "grab", "bubble", or "repulse"
           },
           onclick: {
             enable: true,
-            mode: "push",
+            mode: "push", // Adjust interaction mode to "push" or "remove"
           },
           resize: true,
         },

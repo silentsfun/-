@@ -1,11 +1,17 @@
-/* Your CSS styles from before */
+/* Your CSS styles for body */
 body {
-  background-color: #00000;
+  background-color: #000; /* Changed from #00000 to #000 for black background */
   font-family: Arial, sans-serif;
   margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url('backround.jpg'); /* Replace with your actual image path */
+  background-size: cover;
+  background-repeat: repeat;
+  animation: scrollBackground 30s linear infinite;
+  overflow: hidden; /* To prevent horizontal scrollbar */
 }
 
 /* Your updated game-box styles */
@@ -69,20 +75,10 @@ footer {
 }
 
 .footer-links li a:hover {
-  color: white; /* Change hover color to green */
-}
-/* Your existing CSS styles */
-
-body {
-  background-image: url('backround.jpg'); /* Replace with your actual image path */
-  background-size: cover;
-  background-repeat: repeat;
-  animation: scrollBackground 30s linear infinite;
-  margin: 0;
-  padding: 0;
-  overflow: hidden; /* To prevent horizontal scrollbar */
+  color: white; /* Change hover color to white */
 }
 
+/* Keyframes animation for background scrolling */
 @keyframes scrollBackground {
   0% {
     background-position: 0 0;

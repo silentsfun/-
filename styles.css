@@ -71,3 +71,23 @@ footer {
 .footer-links li a:hover {
   color: white; /* Change hover color to green */
 }
+/* Your existing CSS styles */
+
+body {
+  background-image: url('backround.jpg'); /* Replace with your actual image path */
+  background-size: cover;
+  background-repeat: repeat;
+  animation: scrollBackground 30s linear infinite;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* To prevent horizontal scrollbar */
+}
+
+@keyframes scrollBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
